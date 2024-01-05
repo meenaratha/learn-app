@@ -1,0 +1,241 @@
+:root {
+    --theme-main-color : #FF7800;
+    --theme-secondary-color: #15416e;
+}
+.cat-course{
+    width: 220px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 38px;
+    padding: 0 0 0 52px;
+    background: var(--theme-main-color);
+    color: #fff;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    margin: 0px 0;
+    padding-right: 15px;
+}
+.cat-course::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url("/frontend/images/icon/documents.png") no-repeat;
+    background-position: 100%;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+
+/* mega menu bg*/
+
+.mega-menu-sub a{
+  text-transform: uppercase !important;
+}
+.login-btn{
+    padding: 0px 6px !important;
+    background: #FF7800;
+    color: #ffff !important;
+    width: 100% !important;
+}
+.login-btn:hover{
+    color: #fff;
+    background-color: #15416e;
+
+}
+.register-btn{
+    padding: 5px ;
+    background: transparent;
+    border: 1px solid #fff !important;
+    color: #fff !important;
+
+    margin-right: 25px !important;
+}
+.register-btn:hover{
+    color: #FF7800 !important;
+    border: 0px !important;
+}
+
+
+/*navibar media*/
+
+
+.top .flat-address .custom-info i {
+    margin-left: 0px;
+}
+#mainnav-mobi .submenu.mega-menu {
+    display: block;
+}
+.mega-menu-sub{
+    display: block;
+}
+.mega-menu-sub .list-about{
+    display: block;
+}
+
+.top .flat-address .social-links {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.entry-meta i:hover{
+    color: #FF7800;
+}
+
+
+/* course 5 template */
+
+.course-sidebar{
+    z-index: 2;
+    position: sticky;
+}
+
+
+.course-info-widge{
+    border: 1px solid #EDEDED;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(17,121,239,.15);
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    z-index: 1010;
+    padding: 10px;
+}
+.course-video{
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 0 10px;
+    position: relative;
+}
+.course-video:before {
+    padding-top: 56.25%;
+    content: "";
+    display: block;
+}
+.course-video p{
+    margin-bottom: 20px;
+}
+.course-video iframe {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 1200px){
+.course-info-widget .bottom-inner {
+    padding: 20px;
+}
+}
+.course-info-widget .bottom-inner {
+    padding: 10px;
+}
+.course-info-widget .course-price {
+    align-items: center !important;
+    display: flex !important;
+    margin-bottom: 1.875rem;
+}
+
+.inner ul{
+    margin-top: 20px;
+    padding: 0;
+    margin: 5px 0 0;
+}
+.inner ul li{
+    display: flex;
+
+    padding: 10px 0;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #EDEDED;
+}
+.inner label {
+    display: inline-block;
+}
+.inner ul li span{
+    margin-left: auto !important;
+}
+.course-prize{
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+.course-prize a{
+    background-color: #FF7800;
+    color: #fff;
+    padding: 5px 6px;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+}
+.course-prize a:hover{
+    background-color: #15416e;
+}
+
+/*form social icon design*/
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+.social-container {
+  width: 100%;
+  margin:  auto;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 0em;
+}
+.social-icons li {
+  display: inline-block;
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  transition: all 265ms ease-out;
+}
+.social-icons a {
+  display: inline-block;
+}
+.social-icons a:before {
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  content: " ";
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #00b5f5, #002a8f);
+  transition: all 265ms ease-out;
+}
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+.social-icons a:hover i {
+  transform: scale(2.2);
+  -ms-transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  color: #00b5f5;
+  background: -webkit-linear-gradient(45deg, #00b5f5, #002a8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
